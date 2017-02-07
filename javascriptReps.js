@@ -48,16 +48,18 @@ var letterReverse = function(string){
 			console.log(newStr);
 	}
 
-//Round 6 CAN'T FIGURE OUT!
+//Round 6 
+
 var longestWord = function(strArray){
-	var longest = 0;
-		for(i=0; i < strArray.length; i++){
-			if(longest < strArray[i].length){
-			longest = strArray[i].length;
-			
-				console.log(longest)
+	var word = 0;
+	var longest = " ";
+		for(var i =0; i < strArray.length; i++){
+			if(strArray[i].length > word){
+				word = strArray[i].length;
+				longest = strArray[i]
 			}
 		}
+		console.log(longest)
 	}
 
 
